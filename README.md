@@ -1,4 +1,6 @@
 # genai-img-augmentation
-Medical image augmentation using generative ai with monai 
+![GitHub](https://img.shields.io/github/license/edgarbc/genai-img-augmentation)
 
-- xray augmentation
+Using Generative AI to augment medical image datasets with monai 
+
+- [panoramic xray augmentation](https://github.com/edgarbc/genai-img-augmentation/blob/main/my_monai_panxray_autoencoder.ipynb) 
