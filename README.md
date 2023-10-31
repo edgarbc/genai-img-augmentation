@@ -7,8 +7,14 @@ Deep learning has proven to be an effective method to improve condition identifi
 
 This repository is part of a [medium blog](https://medium.com/@viajesubmarino/synthetic-x-ray-dataset-augmentation-using-generative-ai-178ebc15a074) post I wrote about using Generative AI to augment panoramic xrays datasets with monai. 
 
+# Code
+
 I adapted a tutorial from MONAI to train a variational autoencoder to generate panoramic xrays:  
 
 - [panoramic xray augmentation](https://github.com/edgarbc/genai-img-augmentation/blob/main/my_monai_panxray_autoencoder.ipynb)
 
+# References
+[1]
+
+[2]
 
