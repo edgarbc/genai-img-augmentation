@@ -14,7 +14,10 @@ I adapted a tutorial from MONAI to train a variational autoencoder to generate p
 - [panoramic xray augmentation](https://github.com/edgarbc/genai-img-augmentation/blob/main/my_monai_panxray_autoencoder.ipynb)
 
 # References
-[1]
+[1] Litjens, G., Kooi, T., Ehteshami Bejnordi, B., Adiyoso Setio, AA., Ciompi, F., Ghafoorian, M., van der Laak, J.A.W.M., van Ginneken, B., Sánchez, CI. (2017) A survey on deep learning in medical image analysis. Medical Image Analysis.
 
-[2]
+[2] Masayuki Tsuneki (2022). Deep learning models in medical image analysis. Journal of Oral Biosciences.
+
+[3] Koohi-Moghadam, M., Bae, K.T. (2023) Generative AI in Medical Imaging: Applications, Challenges, and Ethics. J Med Syst 47, 94.
+
 
