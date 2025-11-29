@@ -1,0 +1,12 @@
+# Core dependencies for demo and lightweight experiments
+numpy
+pillow
+scikit-image
+
+# Optional: PyTorch (CPU-only for CI compatibility)
+# Uncomment for local experiments or use: pip install torch --index-url https://download.pytorch.org/whl/cpu
+# torch
+
+# Optional: MONAI for full generative model experiments
+# Install separately with: pip install monai
+# monai
