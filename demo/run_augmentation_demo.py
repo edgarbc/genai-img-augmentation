@@ -79,7 +79,12 @@ def apply_rotation(image: np.ndarray, angle: float = 15.0) -> np.ndarray:
         Rotated image as numpy array
     """
     pil_image = Image.fromarray(image)
-    rotated = pil_image.rotate(angle, resample=Image.Resampling.BILINEAR, fillcolor=0)
+    # Use Image.BILINEAR for compatibility with older Pillow versions
+    try:
+        resample_method = Image.Resampling.BILINEAR
+    except AttributeError:
+        resample_method = Image.BILINEAR
+    rotated = pil_image.rotate(angle, resample=resample_method, fillcolor=0)
     return np.array(rotated)
 
 
