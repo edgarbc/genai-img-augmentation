@@ -1,0 +1,41 @@
+name: CI Smoke Test
+
+on:
+  push:
+    branches: [main, portfolio/*]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  demo-smoke-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run augmentation demo
+      run: |
+        python demo/run_augmentation_demo.py
+
+    - name: Verify demo output
+      run: |
+        if [ -f demo/output/augmented_rotated.png ] && [ -f demo/output/augmented_noisy.png ]; then
+          echo "✅ Demo outputs generated successfully"
+        else
+          echo "❌ Demo outputs not found"
+          exit 1
+        fi
